@@ -7,6 +7,6 @@ export const Nav = styled.nav
     right:0;
     height:'16px';
     background: #330101;
-
+    
     ;
 
