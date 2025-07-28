@@ -1,17 +1,19 @@
+import { Nav, Logo, Menu, MenuItem } from "./Navbar.styles";
+
 
 const Navbar = () => {
 
     return (
-        <nav>
+       <Nav>
+        <Logo>Plataforma online</Logo>
 
-            <div><strong>MeuApp</strong></div>
-            <ul style={{display: "flex", gap: '1rem', listStyle: "none"}}>
-                <li><a href="#nome" style={{color: '#fff', textDecoration:'none'}}>nome</a></li>
-                <li><a href="#sobre" style={{color: '#fff', textDecoration:'none'}}>sobre</a></li>
-                <li><a href="#contato" style={{color: '#fff', textDecoration:'none'}}>contato</a></li>
-            </ul>
-
-        </nav>  
+            <Menu>
+                <MenuItem><a href="#home">home</a></MenuItem>
+                <MenuItem><a href="#fichas">fichas</a></MenuItem>
+                <MenuItem><a href="#jogadores">jogadores</a></MenuItem>
+                <MenuItem><a href="#sobre">sobre</a></MenuItem>
+            </Menu>
+       </Nav>
     )
 
 }

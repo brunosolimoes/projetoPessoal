@@ -1,3 +1,6 @@
 
+const CharacterSheet = ()=>{
 
-type Character
+}
+
+export default CharacterSheet;
