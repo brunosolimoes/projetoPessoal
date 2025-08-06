@@ -1,19 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './componentes/Navbar/Navbar'
 import CharacterSheet from './componentes/sheets/CharacterSheet'
+import Join from './componentes/Join/Join'
+import Chat from './componentes/Chat/Chat'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [chatVisibility, setChatVisibility] = useState(false)
 
   return (
     <>
-      <Navbar></Navbar>
-
-      <CharacterSheet></CharacterSheet>
+    <div className='App'>
+        <Navbar></Navbar>
+          { 
+          chatVisibility?  <Chat></Chat>:<Join setChatVisibility={setChatVisibility}></Join>
+          } 
+    </div>
+      
 
     </>
   )
